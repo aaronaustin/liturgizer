@@ -1,6 +1,5 @@
 ---
-templateKey: 'product-page'
-path: /products
+templateKey: product-page
 title: Our Coffee
 image: /img/jumbotron.jpg
 heading: What we offer
@@ -11,7 +10,8 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - blogLink: Making sense of the SCAA’s new Flavor Wheel
+      image: /img/coffee.png
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
@@ -99,3 +99,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+
