@@ -9,5 +9,9 @@ elements:
     showText: true
     showTitle: true
     stand: true
+  - heading: another
+    presenter: Bob
+    resourceLink: Test Element
+    showText: true
 ---
 
