@@ -7,7 +7,7 @@ public_folder: /img
 
 collections:
   - name: "bulletin"
-    label: "Bulletin"
+    label: "Bulletins"
     folder: "src/pages/bulletin"
     create: true
     slug: "{{year}}-{{month}}-{{day}}:{{time}} {{slug}}"
@@ -15,10 +15,10 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Elements", name: elements, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Presenter, name: presenter, widget: text}, {label: "Resource Link", name: "resourceLink", widget: "relation", collection: "element", searchFields: ["title"], valueField: "title", displayFields: ["title"]}, {label: "Show Title", name: "showTitle", widget: "boolean", default: false}, {label: "Show Text", name: "showText", widget: "boolean", default: false}, {label: "Stand", name: "stand", widget: "boolean", default: false}]}
+      - {label: "Elements", name: elements, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Presenter, name: presenter, widget: text}, {label: "Resource Link", name: "resourceLink", widget: "relation", collection: "*-element", searchFields: ["title"], valueField: "title", displayFields: ["title"]}, {label: "Show Title", name: "showTitle", widget: "boolean", default: false}, {label: "Show Text", name: "showText", widget: "boolean", default: false}, {label: "Stand", name: "stand", widget: "boolean", default: false}]}
 
   - name: "song-element"
-    label: "Element"
+    label: "Songs"
     folder: "src/pages/element"
     filter: {field: "type", value: "song"}
     create: true
@@ -31,7 +31,7 @@ collections:
       - {label: "Text", name: "text", widget: "text"}
       - {label: "Tags", name: "tags", widget: "list"}
   - name: "reading-element"
-    label: "Element"
+    label: "Readings"
     folder: "src/pages/element"
     filter: {field: "type", value: "reading"}
     create: true
