@@ -21,7 +21,7 @@ collections:
     label: "Element"
     folder: "src/pages/element"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "element-post"}
       - {label: "Title", name: "title", widget: "string"}
