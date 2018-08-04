@@ -5,7 +5,7 @@ date: '2018-08-02T21:47:22-04:00'
 elements:
   - heading: another
     presenter: Bob
-    resourceLink: Test Element
+    resourceLink: Take My Life
     showText: true
   - heading: Test
     presenter: test
