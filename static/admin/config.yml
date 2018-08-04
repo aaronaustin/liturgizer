@@ -17,25 +17,11 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Elements", name: elements, widget: list, fields: [{label: Heading, name: heading, widget: string}, {label: Presenter, name: presenter, widget: text}, {label: "Resource Link", name: "resourceLink", widget: "relation", collection: "element", searchFields: ["title", "type"], valueField: "title", displayFields: ["title", "type"]}, {label: "Show Title", name: "showTitle", widget: "boolean", default: false}, {label: "Show Text", name: "showText", widget: "boolean", default: false}, {label: "Stand", name: "stand", widget: "boolean", default: false}]}
 
-  - name: "song_element"
-    label: "Songs"
+  - name: "element"
+    label: "Elements"
     folder: "src/pages/element"
-    filter: {field: "type", value: "song"}
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Type", name: "type", widget: "select", options: ["song", "reading"]}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Text", name: "text", widget: "text"}
-      - {label: "Tags", name: "tags", widget: "list"}
-  - name: "reading_element"
-    label: "Readings"
-    folder: "src/pages/element"
-    filter: {field: "type", value: "reading"}
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
